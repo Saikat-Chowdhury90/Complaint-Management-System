@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 include('include/config.php');
@@ -12,6 +11,7 @@ $currentTime = date( 'd-m-Y h:i:s A', time () );
 
 
 ?>
+
 <?php
 $deptname=$_GET['categoryname'];
 ?>
@@ -51,7 +51,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 
 	<div class="module">
 							<div class="module-head">
-								<h3>Manage Workers</h3>
+								<h3>Assign Workers</h3>
 							</div>
 							<div class="module-body table">
 	<?php if(isset($_GET['del']))
@@ -81,11 +81,11 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 										</tr>
 									</thead>
 									<tbody>
-                                    <a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/worker_form.php?')">
-  <button type="submit" class="btn btn-primary">ADD</button>
+                                    <!-- <a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/worker_form.php?')">
+  <button type="submit" class="btn btn-primary">ADD</button> -->
 </a>
 
-<?php $query=mysqli_query($bd, "select * from workers");
+<?php $query=mysqli_query($bd, "select * from workers where categoryName='$deptname' and status='1'");
  
 $cnt=1;
 while($row=mysqli_fetch_array($query))
@@ -101,9 +101,15 @@ while($row=mysqli_fetch_array($query))
 										
 											<td><?php echo htmlentities($row['regDate']);?></td>
 
-											<td><a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/workerprofile.php?uid=<?php echo htmlentities($row['id']);?>');" title="Update order">
+											<!-- <td><a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/workerprofile.php?uid=<?php echo htmlentities($row['id']);?>');" title="Update order">
 											 <button type="button" class="btn btn-primary">View Detials</button>
-											</a></td>
+											</a> -->
+											<td>
+											<a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/Status_Changer.php?uid=<?php echo htmlentities($row['wid']);?>');" title="Update order">
+											 <button type="button" class="btn btn-primary">Assign</button>
+											</a>
+
+										</td>
 											<td><?php echo htmlentities($row['categoryName']); ?></td>
 										<?php $cnt=$cnt+1; } ?>
 										

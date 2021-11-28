@@ -76,7 +76,7 @@ while($row=mysqli_fetch_array($query))
 
 <tr>
 											<td><b>Category </b></td>
-											<td><?php echo htmlentities($row['catname']);?></td>
+											<td><?php echo htmlentities($row['catname']);  ?></td>
 											<td><b>SubCategory</b></td>
 											<td> <?php echo htmlentities($row['subcategory']);?></td>
 											<td><b>Complaint Type</b></td>
@@ -154,7 +154,7 @@ while($rw=mysqli_fetch_array($ret))
 											 <button type="button" class="btn btn-primary">View User Detials</button></a>
 											</td>
 											<td>
-											<a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/worker-list.php?')">
+											<a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/assignworker-list.php?categoryname=<?php echo htmlentities($row['catname']); ?>')">
   <button type="submit" class="btn btn-primary">ASSIGN WORKER</button></a>
 											</td>
 										</tr>

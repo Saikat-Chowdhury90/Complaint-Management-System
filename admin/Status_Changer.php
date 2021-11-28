@@ -22,7 +22,7 @@ window.print();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Worker Profile</title>
+<title>Worker's Status</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="anuj.css" rel="stylesheet" type="text/css">
 </head>
@@ -33,6 +33,7 @@ window.print();
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 <?php 
 
+$status_change=mysqli_query($bd, "update `workers` set `status` = '0' where wid='".$_GET['uid']."'");
 $ret1=mysqli_query($bd, "select * FROM workers where wid='".$_GET['uid']."'");
 while($row=mysqli_fetch_array($ret1))
 {
@@ -77,7 +78,7 @@ while($row=mysqli_fetch_array($ret1))
 
         <tr height="50">
       <td><b>State:</b></td>
-      <td><?php echo htmlentities($row['State']); ?></td>
+      <td><?php echo htmlentities($row['State']); ?> </td>
     </tr>
 
 
@@ -98,10 +99,15 @@ while($row=mysqli_fetch_array($ret1))
       <td><b>Status:</b></td>
       <td><?php if($row['status']==1)
       { echo "Active";
-} else{
-  echo "Block";
-}
-        ?></td>
+} 
+        ?>&nbsp; &nbsp; <a href="javascript:void(0);" onClick="<?php $status_change ?>"><button class="btn btn-secondary" style="cursor: pointer;">Change</button></a>
+        <?php 
+            if($row['status']==0)
+            {
+                echo "ASSIGNED";
+            }
+        ?>
+    </td>
     </tr>
     
     <tr>
@@ -122,4 +128,4 @@ while($row=mysqli_fetch_array($ret1))
 </body>
 </html>
 
-     <?php } ?>
+     <?php } ?>  
