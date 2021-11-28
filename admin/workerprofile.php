@@ -33,7 +33,7 @@ window.print();
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 <?php 
 
-$ret1=mysqli_query($bd, "select * FROM workers where id='".$_GET['uid']."'");
+$ret1=mysqli_query($bd, "select * FROM workers where wid='".$_GET['uid']."'");
 while($row=mysqli_fetch_array($ret1))
 {
 ?>

@@ -154,7 +154,8 @@ while($rw=mysqli_fetch_array($ret))
 											 <button type="button" class="btn btn-primary">View User Detials</button></a>
 											</td>
 											<td>
-												<button onClick="popUpWindow('http://localhost/Complaint Management System/admin/worker_details.php?>')"  type="button" class="btn btn-primary">Assign Worker</button></td>
+											<a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/admin/worker-list.php?')">
+  <button type="submit" class="btn btn-primary">ASSIGN WORKER</button></a>
 											</td>
 										</tr>
 										<?php  } ?>
