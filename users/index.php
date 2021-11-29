@@ -107,7 +107,7 @@ echo htmlentities($errormsg);
 echo htmlentities($msg);
 		        		}?></p>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" name="username" placeholder="Email"  required autofocus>
+		            <input type="email" class="form-control" name="username" placeholder="Email"  required autofocus>
 		            <br>
 		            <input type="password" class="form-control" name="password" required placeholder="Password">
 		            <label class="checkbox">

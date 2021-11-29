@@ -100,7 +100,7 @@ while($row=mysqli_fetch_array($ret1))
       <td><?php if($row['status']==1)
       { echo "Active";
 } 
-        ?>&nbsp; &nbsp; <a href="javascript:void(0);" onClick="<?php $status_change ?>"><button class="btn btn-secondary" style="cursor: pointer;">Change</button></a>
+        ?>&nbsp; &nbsp; <a href="javascript:void(0);" ><button onClick="<?php $status_change ?>" class="btn btn-secondary" style="cursor: pointer;">Change</button></a>
         <?php 
             if($row['status']==0)
             {

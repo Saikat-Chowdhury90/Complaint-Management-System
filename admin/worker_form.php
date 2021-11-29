@@ -73,7 +73,7 @@
     <input type="number" name="number" id="number">
 </p>
 			
-			<input type="submit" value="Submit">
+			<input type="submit" name="worker_login" value="submit">
 		</form>
 	</center>
 </body>
