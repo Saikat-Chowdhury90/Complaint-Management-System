@@ -54,8 +54,8 @@ window.print();
       <td><b>Status</b></td>
       <td><select name="status" required="required">
       <option value="">Select Status</option>
-      <option value="in process">In Process</option>
-      <option value="worker assigned">Worker Assigned</option>
+      
+      <option value="assigned">Worker Assigned</option>
     <option value="closed">Closed</option>
         
       </select></td>

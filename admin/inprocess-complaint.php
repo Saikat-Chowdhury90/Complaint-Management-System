@@ -70,7 +70,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 								
 <tbody>
 <?php 
-$st='in process';
+$st='assigned';
 $query=mysqli_query($bd, "select tblcomplaints.*,users.fullName as name from tblcomplaints join users on users.id=tblcomplaints.userId where tblcomplaints.status='$st'");
 while($row=mysqli_fetch_array($query))
 {
