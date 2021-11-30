@@ -10,4 +10,4 @@
                     <li><a class="logout" href="logout.php">Logout</a></li>
             	</ul>
             </div>
-        </header>
+        </header><style>.header{background-color: black;} .logout{background-color: blue !important;color: white;}</style>
