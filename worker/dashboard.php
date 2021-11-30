@@ -16,7 +16,7 @@ else{ ?>
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | Dashboard</title>
+    <title>MGP | Dashboard</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -86,7 +86,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 <tbody>
 <?php 
 
- 
+//  $status_changer_worker=mysqli_query($bd, "update workers set status='1' where userEmail='".$_SESSION['login']."'");
 
 
 

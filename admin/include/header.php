@@ -16,7 +16,7 @@
 						</a></li>
 						<li class="nav-user dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="images/user.png" class="nav-avatar" />
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxLkbtTa0kfmKizxJgqECQLdlt_xq1R2jEQQ&usqp=CAU" class="nav-avatar" />
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">

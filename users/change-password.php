@@ -36,7 +36,7 @@ $errormsg="Old Password not match !!";
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | User Change Password</title>
+    <title>MGP | User Change Password</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -144,7 +144,7 @@ return true;
           	
 		</section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
-    <?php include("includes/footer.php");?>
+    
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->

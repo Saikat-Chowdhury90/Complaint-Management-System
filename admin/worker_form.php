@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>GFG- Store Data</title>
+	<title>MGP- Store Data</title>
 </head>
 
 <body>
