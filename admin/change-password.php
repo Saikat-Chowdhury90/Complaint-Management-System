@@ -69,6 +69,7 @@ return true;
 </script>
 </head>
 <body>
+	
 <?php include('include/header.php');?>
 
 	<div class="wrapper">
@@ -126,6 +127,7 @@ return true;
 											<div class="controls">
 												<button type="submit" name="submit" class="btn">Submit</button>
 											</div>
+											<style>.btn{color: white; background-color: #248AAF;} .module{background-color: lightsteelblue;}</style>
 										</div>
 									</form>
 							</div>

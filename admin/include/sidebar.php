@@ -1,7 +1,6 @@
 <div class="span3">
 					<div class="sidebar">
-
-
+                
 <ul class="widget widget-menu unstyled">
 							<li>
 								<a class="collapsed" data-toggle="collapse" href="#togglePages">
@@ -84,6 +83,7 @@ $num1 = mysqli_num_rows($rt);
 								</a>
 							</li>
 						</ul>
+						
 
 					</div><!--/.sidebar-->
 				</div><!--/.span3-->
