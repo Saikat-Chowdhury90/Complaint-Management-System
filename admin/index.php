@@ -35,7 +35,7 @@ exit();
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CMS | Admin login</title>
+	<title>MGP | ADMIN login</title>
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -43,7 +43,7 @@ exit();
 	<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
 </head>
 <body>
-
+<style> body{background-color: lightgrey;}</style>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
@@ -52,7 +52,7 @@ exit();
 				</a>
 
 			  	<a class="brand" href="index.html">
-			  		CMS | Admin
+			  		MGP | ADMIN
 			  	</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
@@ -110,13 +110,15 @@ exit();
 		</div>
 	</div><!--/.wrapper-->
 
+	<style> .wrapper{position:absolute;width:100%;height:80vh;background-color: burlywood;} .module{background-color: lightsteelblue;} .module-head{background-color: lightsteelblue} .module-foot{background-color: lightsteelblue;}</style>
 	<div class="footer">
-		<div class="container">
+		
 			 
 
-			<b class="copyright">&copy; 2020 CMS </b> All rights reserved.
-		</div>
-	</div>
+			<b class="copyright">&copy; Team Hashtag </b> All rights reserved.
+		<style>.copyright{color: white;}</style>
+	</div> 
+	<style> .footer{background-color:black;width:100%;position:absolute;bottom: 0; height: 0; color: white;}</style>
 	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
