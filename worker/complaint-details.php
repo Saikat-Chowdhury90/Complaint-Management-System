@@ -35,7 +35,7 @@ else{ ?>
           	<h3><i class="fa fa-angle-right"></i> Complaint Details</h3>
             <hr />
 
- <?php $query=mysqli_query($bd, "select tblcomplaints.*,category.categoryName as catname from tblcomplaints join category on category.id=tblcomplaints.category where userId='".$_SESSION['id']."' and complaintNumber='".$_GET['cid']."'");
+ <php $query=mysqli_query($bd, "select tblcomplaints.*,category.categoryName as catname from tblcomplaints join category on category.id=tblcomplaints.category where userId='".$_SESSION['id']."' and complaintNumber='".$_GET['cid']."'");
 while($row=mysqli_fetch_array($query))
 {?>
           	<div class="row mt">
@@ -178,4 +178,4 @@ echo "Not Process yet";
 
   </body>
 </html>
-<?php } ?>
+<php } ?>

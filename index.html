@@ -9,12 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Complaint Management System</title>
+    <title>Municipal Grievance Portal</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/half-slider.css" rel="stylesheet">
 </head>
 
 <body>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="recent-news-boxes.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -27,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">COMPLAINT MANAGEMENT </a>
+                <a class="navbar-brand" href="#">GRIEVANCE PORTAL </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -39,10 +43,10 @@
                         <a href="http://localhost/Complaint Management System/users/registration.php">User Registration</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Complaint Management System/admin/">admin</a>
+                        <a href="http://localhost/Complaint Management System/worker/">Worker</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Complaint Management System/worker/">Worker</a>
+                        <a href="http://localhost/Complaint Management System/admin/">Admin</a>
                     </li>
                 </ul>
             </div>
@@ -50,6 +54,11 @@
         </div>
         <!-- /.container -->
     </nav>
+    <style>
+        .navbar {
+            background-color: #2A3132;
+        }
+    </style>
 
     <!-- Half Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
@@ -62,19 +71,29 @@
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
+            <div class="item active1">
+                <div class="fill" style="background-image:url('https://www.insurancesamadhan.com/blog/wp-content/uploads/2020/10/how-grievance-redressal-for-insurance-policies-works.png');"> </div>
+            </div>
 
             <div class="item active">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://localhost/cms/img/c2.jpg');"></div>
+                <div class="fill" style="background-image:url('http://www.nrigroupindia.com/nvismt/wp-content/uploads/sites/2/2020/03/Grievance.jpg');">
+                    <style>
+                        .fill {
+                            height: 70vh;
+                        }
+                    </style>
+                </div>
                 <div class="carousel-caption">
 
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://localhost/cms/img/c10.jpg');"></div>
-                <div class="carousel-caption">
+                <div class="fill" style="background-image:url('https://crda.ap.gov.in/apcrdav2/New-Images/grievances/Blog_1466x440-2-1024x307.png');">
 
+                </div>
+                <div class="carousel-caption">
                 </div>
             </div>
         </div>
@@ -90,44 +109,119 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container">
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="com"><h1><b>WELCOME TO COMPLAINT MANAGEMENT SYSTEM</b></h1>
-                <p><h2>The Easiest Way To Complain Online </h2><br> <b><i>Tired off getting ripped off? Fight back and file a customer complaint now.Sign Up Today And You Can Leave Complaints on various topics/company.</b> </i></p></div>
 
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="com">
+                <h1><b>WELCOME TO MUNICIPAL GRIEVANCE PORTAL</b></h1>
+                <p>
+                    <h2>Solution to your problem is just one step away </h2><br> <b><i>Tired from the old municipal system, No more need to visit the office, Just sign up here, Register your complain & feel free your problem will get resolved in no time.</b>                    </i>
+                </p>
             </div>
-        </div>
-<style>.com{text-align: center;} </style>
-        <hr>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; 2020 CMS</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-        <style> .col-lg-12{text-align: center; border: 1px solid black;}</style>
+            <section class="recentNews">
+                <div class="container">
+                    <h2 class="news-title">Recent News</h2>
+                    <div class="row">
+                        <div class="ct-blog col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="fauxcrop">
+                                    <a href="#"><img alt="News Entry" src="https://dohadebates.com/wp-content/uploads/2020/06/DOHA-Water-Shortage-debate-300x169.jpg"></a>
+                                </div>
+                                <div class="ct-blog-content">
+                                    <div class="ct-blog-date">
+                                        <span>March</span><strong>1</strong>
+                                    </div>
+                                    <h3 class="ct-blog-header">
+                                        Scarcity of Water due to shortage of rain!!! ALERT!!!
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct-blog col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="fauxcrop">
+                                    <a href="#"><img alt="News Entry" src="https://www.paho.org/sites/default/files/styles/max_1500x1500/public/banner-covid-19-1280x549.jpg?itok=R7z_5No5"></a>
+                                </div>
+                                <div class="ct-blog-content">
+                                    <div class="ct-blog-date">
+                                        <span>February</span><strong>27</strong>
+                                    </div>
+                                    <h3 class="ct-blog-header">
+                                        Covid cases rises in District...Stay Alert!!
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct-blog col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="fauxcrop">
+                                    <a href="#"><img alt="News Entry" src="https://english.cdn.zeenews.com/sites/default/files/2020/11/21/900427-night-curfew-mp.jpg"></a>
+                                </div>
+                                <div class="ct-blog-content">
+                                    <div class="ct-blog-date">
+                                        <span>February</span><strong>25</strong>
+                                    </div>
+                                    <h3 class="ct-blog-header">
+                                        CM ANNOUNCES!!! Night curfew from Sunday...
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
 
-    </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+                        <style>
+                            .com {
+                                text-align: center;
+                            }
+                        </style>
+                        <hr>
+
+                        <!-- Footer -->
+                        <!-- <footer>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>Copyright &copy; <b>Team Hashtag</b></p>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </footer> -->
+                        <style>
+                            .col-lg-12 {
+                                text-align: center;
+                                background-color: #90AFC5;
+                            }
+                            /* footer {
+                                position: absolute;
+                                width: 100%;
+                                bottom: -49px;
+                                background-color: #2A3132;
+                            } */
+                        </style>
+                        <style>
+                            body {
+                                background-color: #2A3132;
+                            }
+                        </style>
+
+                    </div>
+                    <!-- /.container -->
+
+                    <!-- jQuery -->
+                    <script src="js/jquery.js"></script>
+
+                    <!-- Bootstrap Core JavaScript -->
+                    <script src="js/bootstrap.min.js"></script>
+
+                    <!-- Script to Activate the Carousel -->
+                    <script>
+                        $('.carousel').carousel({
+                            interval: 5000 //changes the speed
+                        })
+                    </script>
 
 </body>
 

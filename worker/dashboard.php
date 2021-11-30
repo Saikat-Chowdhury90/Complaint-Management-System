@@ -86,7 +86,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 <tbody>
 <?php 
 
-// $status_changer_worker=mysqli_query($bd, "update workers set status='1' where userEmail='".$_SESSION['login']."'");
+ $status_changer_worker=mysqli_query($bd, "update workers set status='1' where userEmail='".$_SESSION['login']."'");
 
 
 
@@ -101,7 +101,7 @@ while($row=mysqli_fetch_array($query))
 											<td><?php echo htmlentities($row['name']);?></td>
 											<td><?php echo htmlentities($row['regDate']);?></td>
 										
-											<td> <a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Complaint Management System/worker/complete_form.php?')">
+											<td> <a href="javascript:void(0);" onClick="popUpWindow('complete_form.php')">
   <button type="submit" class="btn btn-primary">work completed</button>
 </a></td>
 											
