@@ -20,6 +20,7 @@ $complaintdetials=$_POST['complaindetails'];
 $compfile=$_FILES["compfile"]["name"];
 
 
+$status_changer_worker=mysqli_query($bd, "update workers set status='1' where userEmail='".$_SESSION['login']."'");
 
 move_uploaded_file($_FILES["compfile"]["tmp_name"],"complaintdocs/".$_FILES["compfile"]["name"]);
 $query=mysqli_query($bd, "insert into tblcomplaints(userId,category,subcategory,complaintType,state,noc,complaintDetails,complaintFile) values('$uid','$category','$subcat','$complaintype','$state','$noc','$complaintdetials','$compfile')");

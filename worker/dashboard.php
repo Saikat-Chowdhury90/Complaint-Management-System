@@ -86,7 +86,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 <tbody>
 <?php 
 
-// $status_changer_worker=mysqli_query($bd, "update workers set status='1' where userEmail='".$_SESSION['login']."'");
+ $status_changer_worker=mysqli_query($bd, "update workers set status='1' where userEmail='".$_SESSION['login']."'");
 
 
 
